@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham Salunkhe - Team Vitality Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #0f172a;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #7e22ce 100%);
+        }
+        
+        .team-vitality-gradient {
+            background: linear-gradient(135deg, #000000 0%, #ff4655 50%, #000000 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255, 70, 85, 0.2);
+        }
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: .15em solid #ff4655;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #ff4655 }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff4655, #6366f1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-gray-900/90 backdrop-blur-sm z-50 shadow-sm border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76a4e860-b69b-47e1-9d66-5dbb74e1c6d5.png" alt="Team Vitality Logo" class="h-10 w-10" />
+                    <div class="text-2xl font-bold">
+                        <span class="text-white">Team</span><span class="text-red-500">Vitality</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-400 hover:text-red-500 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-red-500 transition-colors">About</a>
+                    <a href="#stats" class="text-gray-400 hover:text-red-500 transition-colors">Stats</a>
+                    <a href="#achievements" class="text-gray-400 hover:text-red-500 transition-colors">Achievements</a>
+                    <a href="#contact" class="text-gray-400 hover:text-red-500 transition-colors">Contact</a>
+                </div>
+                
+                <button class="md:hidden text-gray-400">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center gradient-bg text-white pt-20">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="team-vitality-gradient px-6 py-2 rounded-full inline-flex items-center space-x-2">
+                        <span class="text-sm font-semibold">TEAM VITALITY ESPORTS</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                        I'm 
+                        <span class="typewriter">Soham Salunkhe</span>
+                    </h1>
+                    <p class="text-xl text-white/90">
+                        Professional Call of Duty Mobile Player for Team Vitality. Competing internationally across multiple continents and tournaments.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="bg-white text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                            Watch Games
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-red-600 transition-colors">
+                            Join Discord
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="floating">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e7ee515d-11ca-419c-b0dd-efb97684bb43.png" alt="Soham Salunkhe professional esports player in Team Vitality jersey at international tournament" class="rounded-2xl shadow-2xl" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">About Soham Salunkhe</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    International Call of Duty Mobile Champion representing Team Vitality
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e506459-d191-47fe-8f1c-593e9d2ff4c8.png" alt="Soham Salunkhe professional gaming setup with Team Vitality branding" class="rounded-2xl shadow-lg" />
+                </div>
+                
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-white">Global Competitor</h3>
+                    <p class="text-gray-400">
+                        As Soham Salunkhe of Team Vitality, I've competed in international Call of Duty Mobile tournaments across multiple continents. 
+                        With exceptional strategic gameplay, lightning-fast reflexes, and unmatched team coordination, 
+                        I represent India on the global stage against the world's best players.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+                                <span class="font-semibold">Assault Specialist</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+                                <span class="font-semibold">Sniper Elite</span>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-red-500 rounded-full mr-3"></div>
+                                <span class="font-semibold">Team Captain</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-red-极500 rounded-full mr-3"></div>
+                                <span class="font-semibold">International Player</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4">
+                        <button class="bg-red-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition-colors">
+                            Tournament Schedule
+                        </button>
+                        <button class="border-2 border-red-600 text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                            Watch Stream
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Career Statistics</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Numbers that define international competitive excellence
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="stats-number mb-2">15+</div>
+                    <p class="极text-gray-400">Countries Played</p>
+                </div>
+                
+                <!-- Stat 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="stats-number mb-2">87%</div>
+                    <p class="text-gray-400">Win Rate</p>
+                </div>
+                
+                <!-- Stat 3 -->
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="stats-number mb-2">3.5</div>
+                    <p class="text-gray-400">K/D Ratio</p>
+                </div>
+                
+                <!-- Stat 4 -->
+                <div class="bg-gray-800 p-8 rounded-2xl text-center card-hover">
+                    <div class="stats-number mb-2">14</div>
+                    <p class="text-gray-400">International Wins</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Weapon Specialization</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Assault Rifles</span>
+                                <span class="text-red-500">96%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Sniper Rifles</span>
+                                <span class="text-red-500">91%极</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">SMGs</span>
+                                <span class="text-red-500">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-4 text-white">Game Modes</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Search & Destroy</span>
+                                <span class="text-red-500">94%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style极="width: 94%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Team Deathmatch</span>
+                                <span class="text-red-500">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 92%"></div>
+                            </极div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Domination</span>
+                                <span class="text-red-500">89%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-6 rounded-2xl">
+                    <h3 class="text-xl font-semibold mb-4 text-white">International Experience</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-3 bg-gray-700 rounded-lg">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <span>15+ Countries</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-700 rounded-lg">
+                            <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-trophy"></极i>
+                            </div>
+                            <span>Multiple Championships</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-gray-700 rounded-lg">
+                            <div class极="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <span>Global Recognition</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">International Achievements</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Global wins and international recognition across multiple continents
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Achievement 1 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0极f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f0570b5c-98d5-45b8-b9c8-c50ee09d6375.png" alt="Soham Salunkhe holding Call of Duty Mobile World Championship trophy" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h3 class="text-xl font-semibold mb-2">World Championship 2023</h3>
+                            <p class="text-sm">1st Place - $200,000 Prize</p>
+                            <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                                Watch Finals
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Achievement 2 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ab59205e-ba80-48b0-b47b-5dd9e400d123.png" alt="Soham Salunkhe celebrating with Team Vitality at ESL tournament" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h3 class="text-xl font-semibold mb-2">ESL Mobile Open 2023</h3>
+                            <p class="text-sm">Grand Finals Winner - Europe</p>
+                            <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                                Highlights
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Achievement 3 -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4aabf5d0-4493-4eff-88d7-0702186ee0bf.png" alt="Soham Salunkhe international tournament victory in Asia championship" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
+                    <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h3 class="text-xl font-semibold mb-2">Asia Championship</h3>
+                            <p class="text-sm">Undefeated International Run</极p>
+                            <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                                Season Stats
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="border-2 border-red-600 text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-red-600 hover:text-white transition-colors">
+                    View All International Tournaments
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Contact Soham Salunkhe for sponsorship, collaboration, or fan inquiries
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-white">Connect With Me</h3>
+                    <p class="text-gray-400">
+                        Interested in collaborating, sponsorship opportunities, or just want to connect with an international competitor? 
+                        Reach out directly for serious inquiries about tournaments, partnerships, or gaming collaborations.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Official Email</p>
+                                <p class="text-gray-400">teamvitalitysoham@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center极 justify-center mr-4">
+                                <i class="fab fa-twitch"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Twitch</p>
+                                <p class="text-gray-400">twitch.tv/sohamsalunkhe</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Team</p>
+                                <p class="text-gray-400">Team Vitality Pro Player</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#" class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                            <i class="fab fa-twitch"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:极bg-red-700 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-colors">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-lg">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                            <input type="text" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-white" placeholder="Your name">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-white" placeholder="your@email.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Subject</label>
+                            <select class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-white">
+                                <option>Sponsorship Inquiry</option>
+                                <option>Collaboration</option>
+                                <option>Fan Message</option>
+                                <option>Tournament Invitation</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                            <textarea rows="5" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-white" placeholder="Tell me about your inquiry..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76a4e860-b69b-47e1-9d66-5dbb74e1c6d5.png" alt="Team Vitality Logo" class="h-8 w-8" />
+                        <div class="text-xl font-bold">
+                            <span class="text-white">Team</span><span class="text-red-500">Vitality</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">
+                        Professional Call of Duty Mobile player Soham Salunkhe competing at the highest level of international esports.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-red-500 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-red-500 transition-colors">About</a></li>
+                        <li><a href="#stats" class="hover:text-red-500 transition-colors">Stats</a></li>
+                        <li><a href="#achievements" class="hover:text-red-500 transition-colors">Achievements</a></li>
+                        <li><a href="#contact" class="hover:text-red-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white极 mb-4">Tournaments</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-red-500 transition-colors">World Championship</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">ESL Mobile Open</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Regional Cups</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition-colors">Pro League</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-white mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Get updates on tournaments and streams.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py极-2 bg-gray-800 text-white rounded-l-lg border border-gray-700">
+                        <button class="bg-red-600 px-4 py-2 rounded-r-lg hover:bg-red-700 transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Team Vitality - Soham Salunkhe. All rights reserved. Professional Call of Duty Mobile Player.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple typewriter effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const phrases = ['Soham Salunkhe', 'Team Vitality Pro', 'CoD Mobile Champion', 'International Competitor'];
+            let currentPhrase = 0;
+            let currentLetter = 0;
+            let typingSpeed = 100;
+            let erasingSpeed = 50;
+            let newTextDelay = 2000;
+            let textElement = document.querySelector('.typewriter');
+            
+            function type() {
+                if (currentLetter < phrases[currentPhrase].length) {
+                    textElement.textContent += phrases[currentPhrase].charAt(currentLetter);
+                    currentLetter++;
+                    setTimeout(type, typingSpeed);
+                } else {
+                    setTimeout(erase, newTextDelay);
+                }
+            }
+            
+            function erase() {
+                if (currentLetter > 0) {
+                    textElement.textContent = phrases[currentPhrase].substring(0, currentLetter - 1);
+                    currentLetter--;
+                    setTimeout(erase, erasingSpeed);
+                } else {
+                    current极Phrase = (currentPhrase + 1) % phrases.length;
+                    setTimeout(type, typingSpeed + 1000);
+                }
+            }
+            
+            // Start the typewriter effect
+            setTimeout(type, newTextDelay + 250);
+        });
+    </script>
+</body>
+</html>
